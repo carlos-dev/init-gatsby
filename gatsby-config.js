@@ -57,14 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-        displayName: process.env.NODE_ENV !== 'procuction',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/src/pages/about`,
-        ignore: [`**/styles.js`],
+        displayName: process.env.NODE_ENV !== 'production',
       },
     },
     `gatsby-plugin-offline`,
